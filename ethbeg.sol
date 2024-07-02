@@ -22,21 +22,21 @@ contract CustomToken {
     mapping(address => uint) public tokenBalances;
 
     // Events for generating and destroying tokens
-    event TokensGenerated(address indexed to, uint amount);
-    event TokensDestroyed(address indexed from, uint amount);
+    event Tokensmint(address indexed to, uint amount);
+    event Tokensburn(address indexed from, uint amount);
 
     // Function to generate new tokens
-    function generate(address account, uint amount) public {
+    function mint(address account, uint amount) public {
         totalTokens += amount;                  // Increase total supply
         tokenBalances[account] += amount;       // Update balance of the account
-        emit TokensGenerated(account, amount);  // Emit generation event
+        emit Tokensmint(account, amount);  // Emit generation event
     }
 
     // Function to destroy tokens
-    function destroy(address account, uint amount) public {
+    function burn(address account, uint amount) public {
         require(tokenBalances[account] >= amount, "Insufficient balance"); // Check balance
         totalTokens -= amount;                   // Decrease total supply
         tokenBalances[account] -= amount;        // Update balance of the account
-        emit TokensDestroyed(account, amount);   // Emit destruction event
+        emit Tokensburn(account, amount);   // Emit destruction event
     }
 }
