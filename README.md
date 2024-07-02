@@ -35,7 +35,7 @@ The contract begins with a license identifier and specifies the Solidity version
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.26;
 ```
 
 ### Contract Declaration
