@@ -117,10 +117,4 @@ TokensDestroyed(holder_address, 50);
 
 ## Thanks Note
 
-Thank you for exploring the CustomToken smart contract. This project provides a practical introduction to token creation and management on the Ethereum blockchain. By engaging with this contract, you can gain valuable insights into the core functionalities of token operations and develop a solid foundation for more complex decentralized applications. Happy coding, and feel free to reach out if you have any questions or need further assistance.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Thank you for exploring the CustomToken smart contract. This project provides a practical introduction to token creation and management on the Ethereum blockchain. By engaging with this contract, you can gain valuable insights into the core functionalities of token operations and develop a solid foundation for more complex decentralized applications. Happy coding :)
